@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./pages/homepage/home.component";
 import {SvgComponent} from "./pages/svg/svg.component";
 import {DataVisualizationComponent} from "./pages/data-visualization/data-visualization.component";
+import {CreditsComponent} from "./pages/credits/credits.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'dataVis',
     component: DataVisualizationComponent,
   },
+  {
+    path: 'credits',
+    component: CreditsComponent,
+  }
 ];
 
 @NgModule({
