@@ -3,13 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/homepage/home.component';
+import { SvgComponent } from "./pages/svg/svg.component";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { DataVisualizationComponent } from "./pages/data-visualization/data-visualization.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SvgComponent,
+    DataVisualizationComponent
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],

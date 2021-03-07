@@ -1,0 +1,43 @@
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: #038d05;
+  border-radius: 50%;
+
+  offset-path: path('m 45 45 a 5 5 0 0 0 100 0 a 5 5 0 0 0 -100 0');
+  offset-distance: 0;
+
+  animation: red-ball linear infinite;
+}
+
+@keyframes red-ball {
+  from {
+    offset-distance: 0;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+
+.path {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 0;
+  animation: dash 1s linear;
+}
+
+.path-infinite {
+  stroke-dasharray: 320;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear alternate infinite ;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
