@@ -11,3 +11,8 @@ a:hover {
   text-decoration: none;
   color: brown;
 }
+
+p {
+  text-indent: 5%;
+  text-align: justify;
+}
